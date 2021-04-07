@@ -1,15 +1,4 @@
 .altaempleado_box{
-    width: 30px;
-    height: 40px;
-    top: 50%;
-    left: 50% ;
-    transform: translate(-50%,-50%);
-    position: absolute;
-    border: rgb(199, 195, 195) 1px solid;
-    background: rgb(255, 255, 255);
-    box-shadow: rgb(226, 224, 224) 1px 5px 15px;
-    box-sizing: content-box;
-    border-radius: 15px;
-    padding: 20px 30px;
+    
 }
 

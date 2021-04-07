@@ -16,8 +16,7 @@
 
     <title>Lista Empleado</title>
     
-    <link rel="shortcut icon" href="favicon.ico" type="image/icon">
-    <link type="text/css" href="estilo.css" rel="stylesheet">
+    <link type="text/css" href="estilos/layout.css" rel="stylesheet">
 </head>
 
 <body>
@@ -26,7 +25,7 @@
         <?php
             while ($registro = mysqli_fetch_assoc($resultado)) //imprime en forma de lista los registros llevados hasta el momento
                 {
-                    echo '<li>' . $registro['nombre'] . '(' . $registro['edad'] . 'años)';
+                    echo '<li>' . $registro['nombre'] . '&nbsp(' . $registro['edad'] . '&nbspaños)&nbsp';
                     echo '<a href= "modificarempleado.php?empleadoid=' . $registro['id']. 
                          '">Modificar</a>&nbsp&nbsp';
                     echo '<a href= "eliminarempleado.php?empleadoid=' . $registro['id'] . 

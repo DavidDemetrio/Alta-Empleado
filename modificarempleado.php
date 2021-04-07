@@ -17,7 +17,7 @@
 
     <title>Modificar Empleado</title>
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/icon">
+    <link type="text/css" href="estilos/layout.css" rel="stylesheet">
 </head>
 
 <body>
