@@ -6,7 +6,7 @@ Author: David Demetrio López Paz
 -->
 
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -14,7 +14,9 @@ Author: David Demetrio López Paz
     <meta name="description" content="Aplicación que da de alta a un nuevo empleado y que
                                       puede modificar o eliminar un empleado">
     <meta name="author" content="david demetrio lopez paz">
+
     <title>Nuevo Empleado</title>
+
     <link rel="shortcut icon" href="favicon.ico" type="image/icon">
 </head>
 
