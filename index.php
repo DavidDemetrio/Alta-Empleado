@@ -17,19 +17,26 @@ Author: David Demetrio López Paz
 
     <title>Nuevo Empleado</title>
 
-    <link type="text/css" href="estilos/layout.css" rel="stylesheet">
-    <link type="text/css" href="estilos/alta_empleado.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="estilos/layout.css">
+    <link rel="stylesheet" type="text/css" href="estilos/altaempleado.css" >
 </head>
 
 <body>
+
+    
     <div class="altaempleado_box">
-        <h1>Empresa</h1>
+        <h1>Alta Empleado</h1>
         <form action="agregarempleado.php" method="POST" name="nuevoempleado">
-            <input type="text" name="nombre_empleado"> </br>
-            <input type="number" name="empleado_edad"> </br></br>
-            <input type="submit" name="altaempleado" value="Alta Empleado">
+            <input type="text" name="nombre_empleado"> </br></br>
+            <input type="number" min="18" max="65" name="empleado_edad"> 
+            </br></br>
+            <input type="submit" name="altaempleado">
         </form>
     </div>
+
+
+
+    
 </body>
 
 </html>

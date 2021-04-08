@@ -1,0 +1,28 @@
+.altaempleado_box{
+    width: 450px;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+
+    background: rgb(36, 36, 221);
+    border: blue 1px solid;   
+}
+
+.altaempleado_box h1{
+    padding-bottom: 15px;
+    text-align: center;
+    color: white;
+}
+
+.altaempleado_box input[type="text"], .altaempleado_box input[type="number"]{
+    width: 50%;
+    height: 20px;
+    transform: translate(50%);  
+}
+
+.altaempleado_box input[type="submit"]{
+    transform: translate(220%);
+    
+}
