@@ -13,7 +13,7 @@
 .altaempleado_box h1{
     padding-bottom: 15px;
     text-align: center;
-    color: white;
+    color: rgb(231, 57, 57);
 }
 
 .altaempleado_box input[type="text"], .altaempleado_box input[type="number"]{
@@ -25,4 +25,9 @@
 .altaempleado_box input[type="submit"]{
     transform: translate(220%);
     
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
