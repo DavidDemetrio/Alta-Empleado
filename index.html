@@ -1,5 +1,5 @@
 <!--Project Name: Alta Empleado
-Purpose Summary: Es una aplicación que permite dar de alta a un nuevo empleado
+Purpose Summary: Es una aplicación que permite dar de alta a un nuevo empleado validando el formulario
 y agregarlo a la base de datos empresa, donde posteriormente
 habrá una lista para modificar o elimnar un empleado registrado.
 Author: David Demetrio López Paz
@@ -20,41 +20,36 @@ Author: David Demetrio López Paz
     <link rel="stylesheet" type="text/css" href="estilos/layout.css">
     <link rel="stylesheet" type="text/css" href="estilos/altaempleado.css" >
 
-    <script src="validacion.js"></script>
+    
 
 </head>
 
 <body>
-
-    
+   
     <div class="altaempleado_box">
         <h1>Alta Empleado</h1>
         <form action="agregarempleado.php" class="formulario" id="formulario" method="POST" name="nuevoempleado">
-
+            
             <!--Grupo: Nombre-->
-            <div class="formulario_grupo" id="grupo_nombre">     <!--id=grupo_nombre para identificar con javascript-->
-                <div class="formulario_grupo_input">
-                    <input type="text" class="formulario_input" id="nombre_empleado" name="nombre_empleado" placeholder="Nombre(s)"> 
-                </div>
-                <p class="formulario_input_error">Valor no válido, vuelve a intentarlo.</p>  
-            </div>  
+            <div class="formulario_grupo">    
+                <input type="text" class="formulario_input" id="nombre_empleado" name="nombre_empleado" placeholder="Nombre(s)">    
+                <p class="formulario_input_error">Ummm! Valor incorrecto,</br>introduce tu nombre o nombres.¡Por favor!</p>             
+            </div>
+                
+            <!--Grupo:Edad-->  
+            <div class="formulario_grupo">    
+                <input type="text" class="formulario_input" id="empleado_edad" name="empleado_edad" placeholder="edad">                 
+                <p class="formulario_input_error2">Edad debe ser de 18-65 años.</p>
+            </div>
 
-            <!--Grupo:Edad-->
-            <div class="formulario_grupo" id="grupo_edad">     
-                <div class="formulario_grupo_input">
-                    <input type="number" class="formulario_input" id="empleado_edad" name="empleado_edad" placeholder="Edad"> 
-                </div>
-                <p class="formulario_input_error">La edad debe estar en un rango entre 18-65 años.</p>  
-            </div> 
-                    
             <!--Botón de enviar-->
             <input type="submit" name="alta_empleado">    
             
         </form>
     </div>
 
-
-    
+   
+    <script src="js/validacion.js"></script>
 </body>
 
 </html>

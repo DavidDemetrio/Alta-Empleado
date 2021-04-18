@@ -14,9 +14,10 @@
                 if($exito)
                     header('location: listaempleado.php'); // si query fue True, direcciona a listaempleado.php        
                 else
-                    header('location: index.php'); //redirecciona a la página principal
+                    header('location: index.html'); //redirecciona a la página principal
                     
             }
     else
-        header('location:index.php');       
+        header('location:index.html');
+               
 ?>
