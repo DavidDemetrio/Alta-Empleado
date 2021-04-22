@@ -12,10 +12,10 @@
             if($exito)
                 header('location: listaempleado.php');              
             else
-                header('location: index.php');
+                header('location: index.html');
         }
         
     else
-        header('location: index.php');
+        header('location: index.html');
     
 ?>

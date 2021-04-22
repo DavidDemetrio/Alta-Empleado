@@ -22,6 +22,7 @@
 <body>
     <h1>Lista Empleados</h1>
     <ul>
+      
         <?php
             while ($registro = mysqli_fetch_assoc($resultado)) //imprime en forma de lista los registros llevados hasta el momento
                 {
@@ -32,6 +33,7 @@
                          '">Eliminar</a></li>';
                 }
         ?>
+          <a href="index.html"><--regresar</a>
     </ul>
 </body>
 

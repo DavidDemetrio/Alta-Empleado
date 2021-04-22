@@ -8,7 +8,7 @@ const expresiones = {
 }
 
 const campos ={
-    nombre_empleado: false   
+    nombre_empleado   
 } 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 /**Comportamiento dinámico del formulario */
@@ -43,6 +43,7 @@ const validarCampo = (expresion, input, campo) =>{
 
 /** Funcion para evaluar si es un entero o decimal la edad y entre un rango de 18-65años */
 function esEntero(numero){
+    parseInt(numero);
     if(numero % 1 == 0){
         if(numero>=18 && numero<=65 && !(expresiones.notValid.test(numero))){ //si edad esta en 18-65 años y no corresponde a la expresion regular notValid
             document.getElementById("empleado_edad").classList.remove("formulario_input-error");  //entonces no muestres
