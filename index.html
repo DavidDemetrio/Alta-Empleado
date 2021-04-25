@@ -17,39 +17,36 @@ Author: David Demetrio López Paz
 
     <title>Nuevo Empleado</title>
 
-    <link rel="stylesheet" type="text/css" href="estilos/layout.css">
-    <link rel="stylesheet" type="text/css" href="estilos/altaempleado.css" >
-
-    
-
+    <link rel="stylesheet" type="text/css" href="estilos/altaempleado.css">
 </head>
 
 <body>
-   
+
     <div class="altaempleado_box">
         <h1>Alta Empleado</h1>
-        <form action="agregarempleado.php" class="formulario" id="formulario" method="POST" name="nuevoempleado">
-            
+
+        <form action="agregarempleado.php" class="formulario" id="formulario" method="POST">
+
             <!--Grupo: Nombre-->
-            <div class="formulario_grupo">    
-                <input type="text" class="formulario_input" id="nombre_empleado" name="nombre_empleado" placeholder="Nombre(s)">    
-                <p class="formulario_input_error">El nombre solo puede llevar letras y espacios.</p>             
+            <div class="formulario_grupo">
+                <input type="text" class="formulario_input" id="nombre_empleado" name="nombre_empleado"
+                    placeholder="Nombre(s)">
+                <p class="formulario_input_error">El nombre solo puede llevar letras y espacios.</p>
             </div>
-                
-            <!--Grupo:Edad-->  
-            <div class="formulario_grupo">    
-                <input type="text" class="formulario_input" id="empleado_edad" name="empleado_edad" placeholder="edad">                 
+
+            <!--Grupo:Edad-->
+            <div class="formulario_grupo">
+                <input type="text" class="formulario_input" id="empleado_edad" name="empleado_edad" placeholder="edad">
                 <p class="formulario_input_error2">Edad debe ser de 18-65 años.</p>
             </div>
 
             <!--Botón de enviar-->
-            <input type="submit" name="alta_empleado">    
-            
+            <input type="submit" name="alta_empleado" value="Enviar">
         </form>
+
     </div>
 
-   
-       <script src="js/validacion.js"></script> 
-    </body>
+    <script src="js/validacion.js"></script>
+</body>
 
 </html>

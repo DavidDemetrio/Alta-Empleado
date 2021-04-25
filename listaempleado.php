@@ -11,18 +11,15 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Lista Empleado</title>
-    
-    <link type="text/css" href="estilos/layout.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Lista Empleados</h1>
+    <h1 style="color:orange">Lista Empleados</h1>
+
     <ul>
-      
         <?php
             while ($registro = mysqli_fetch_assoc($resultado)) //imprime en forma de lista los registros llevados hasta el momento
                 {
@@ -33,7 +30,7 @@
                          '">Eliminar</a></li>';
                 }
         ?>
-          <a href="index.html"><--regresar</a>
+        <a href="index.html"><img style ="margin-top:15px" src= "flecha.png" width="20px" alt="Regresar" title="Regresar a Alta Empleado"></a>
     </ul>
 </body>
 

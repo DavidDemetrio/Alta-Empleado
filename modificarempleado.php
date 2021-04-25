@@ -41,7 +41,7 @@ $registro = mysqli_fetch_assoc($resultado);
             <input type="hidden" name="empleado_id" value="<?php echo $registro['id'] ?>">
 
             <!--Grupo submit Actualizar Empleado-->
-            <input type="submit" name="alta_empleado"">
+            <input type="submit" name="alta_empleado" value="Enviar">
         </form>
     </div>
     <script src="js/validacion.js"></script> 
