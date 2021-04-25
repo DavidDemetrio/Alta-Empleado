@@ -34,11 +34,6 @@
 }
 
 .altaempleado_box input[type="submit"]{
-<<<<<<< HEAD
-    transform: translate(20%);
-    
-}
-=======
     height: 33px;
     width: 63px;
     margin-top: 25px;
@@ -76,4 +71,3 @@
 .formulario_input_error1{
     display: block;
 }
->>>>>>> prueba

@@ -30,13 +30,9 @@ function insertDatos()
     if ($exito)
         header('location: listaempleado.php');
     else
-<<<<<<< HEAD
-        header('location:index.html');       
-=======
         echo '<script language="javascript">alert(":( Error! No se pudo hacer la insersión de los datos en la base de datos. Por favor, vuelve a intentarlo."); window.location = "index.html"</script>';
     
     mysqli_free_result($exito);
     mysqli_close($conexion);
 }
->>>>>>> prueba
 ?>
