@@ -1,28 +1,79 @@
 .altaempleado_box{
-    width: 450px;
-    height: 250px;
+    width: 603px;
+    height: 349px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     position: absolute;
 
     background: rgb(36, 36, 221);
-    border: blue 1px solid;   
+    border: blue 1px solid;
+    border-radius: 5px;
+    box-shadow: rgba(148, 148, 218, 0.972) 12px 12px 10px;   
 }
 
 .altaempleado_box h1{
     padding-bottom: 15px;
     text-align: center;
-    color: white;
+    color: rgb(255, 179, 0);
+    font-weight:900; 
+    font-size: 49px;
+    margin-bottom: 15px;
 }
 
-.altaempleado_box input[type="text"], .altaempleado_box input[type="number"]{
-    width: 50%;
-    height: 20px;
-    transform: translate(50%);  
+.formulario_grupo{
+    margin-bottom: 17px;
+}
+
+.formulario_input{
+    width: 60%;
+    height: 30px;
+    transform: translate(34%);  
+    font-size: 19px;
+    outline: none;    
 }
 
 .altaempleado_box input[type="submit"]{
+<<<<<<< HEAD
     transform: translate(20%);
     
 }
+=======
+    height: 33px;
+    width: 63px;
+    margin-top: 25px;
+    transform: translate(686%); 
+    cursor: pointer;    
+}
+
+.formulario_input-error{
+    width: 60%;
+    height: 30px;
+    transform: translate(34%);
+    outline: none;
+    border:#0175f1 solid;
+    box-shadow: #0175f1 1px 1px 2px;
+}
+
+.formulario_input_error{
+    margin: 0;
+    display: none;
+    transform: translate(21%);
+    font-size: 15px;
+    color:#ffffff;
+    font-weight: 600;
+}
+
+.formulario_input_error2{
+    margin: 0;
+    display: none;
+    transform: translate(21%);
+    font-size: 15px;
+    color:#ffffff;
+    font-weight: 600;
+}
+
+.formulario_input_error1{
+    display: block;
+}
+>>>>>>> prueba
