@@ -34,7 +34,7 @@ function updateDatos(){
     if($exito)
         header('location: listaempleado.php');
     else
-        echo '<script type="text/javascript">alert("Falló la conexión con el servidor al intentar actualizar los datos. Inténtalo en otro momento, por favor."); window.location= "index.html"</script>';
+        echo '<script type="text/javascript">alert("Falló la conexión con el servidor al intentar actualizar los datos. Inténtalo en otro momento, por favor."); window.location= "index.php"</script>';
     
     mysqli_free_result($exito);
     mysqli_close($conexion);  

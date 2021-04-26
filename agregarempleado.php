@@ -4,17 +4,17 @@ $edad = $_POST['empleado_edad'];
 
 if (!empty($nombre) && !empty($edad)) {
     if (preg_match("/^\s+$/", $nombre))
-        echo '<script type= "text/javascript"> alert(":( Error! No se pude hacer la insersión de los datos en la base de datos. Por favor llena el formulario de manera correcta."); window.location="index.html"</script>';
+        echo '<script type= "text/javascript"> alert(":( Error! No se pude hacer la insersión de los datos en la base de datos. Por favor llena el formulario de manera correcta."); window.location="index.php"</script>';
     else if (!(preg_match("/^[a-zA-ZÀ-ÿ\s]{1,40}$/", $nombre)))
-        echo '<script type= "text/javascript"> alert(":( Error! No se pude hacer la insersión de los datos en la base de datos. Por favor llena el formulario de manera correcta."); window.location="index.html"</script>';
+        echo '<script type= "text/javascript"> alert(":( Error! No se pude hacer la insersión de los datos en la base de datos. Por favor llena el formulario de manera correcta."); window.location="index.php"</script>';
     else if (!(ctype_digit($edad)))
-        echo '<script type= "text/javascript"> alert("Vaya! En el campo edad no uses la tecla espacio, vuelve a intentarlo por favor."); window.location="index.html"</script>';
+        echo '<script type= "text/javascript"> alert("Vaya! En el campo edad no uses la tecla espacio, vuelve a intentarlo por favor."); window.location="index.php"</script>';
     else if ($edad < 18 || $edad > 65)
-        echo '<script type= "text/javascript"> alert("Vaya! En el campo edad no uses la tecla espacio, vuelve a intentarlo por favor."); window.location="index.html"</script>';
+        echo '<script type= "text/javascript"> alert("Vaya! En el campo edad no uses la tecla espacio, vuelve a intentarlo por favor."); window.location="index.php"</script>';
     else
         insertDatos();
 } else 
-    echo '<script language= "javascript">alert("Por favor llena el formulario correctamente."); window.location="index.html"</script>';
+    echo '<script language= "javascript">alert("Por favor llena el formulario correctamente."); window.location="index.php"</script>';
 
 //**FUNCION isertDatos */
 function insertDatos()
@@ -30,7 +30,7 @@ function insertDatos()
     if ($exito)
         header('location: listaempleado.php');
     else
-        echo '<script language="javascript">alert(":( Error! No se pudo hacer la insersión de los datos en la base de datos. Por favor, vuelve a intentarlo."); window.location = "index.html"</script>';
+        echo '<script language="javascript">alert(":( Error! No se pudo hacer la insersión de los datos en la base de datos. Por favor, vuelve a intentarlo."); window.location = "index.php"</script>';
     
     mysqli_free_result($exito);
     mysqli_close($conexion);
