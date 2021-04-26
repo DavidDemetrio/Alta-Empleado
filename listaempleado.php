@@ -30,7 +30,7 @@
                          '">Eliminar</a></li>';
                 }
         ?>
-        <a href="index.html"><img style ="margin-top:15px" src= "flecha.png" width="20px" alt="Regresar" title="Regresar a Alta Empleado"></a>
+        <a href="index.php"><img style ="margin-top:15px" src= "flecha.png" width="20px" alt="Regresar" title="Regresar a Alta Empleado"></a>
     </ul>
 </body>
 
