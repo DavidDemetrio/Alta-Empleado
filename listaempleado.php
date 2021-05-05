@@ -2,7 +2,7 @@
     include "basededatos.php";
 
     $sql = "SELECT id,nombre,edad FROM empleado";
-    $resultado = mysqli_query($conexion, $sql);
+    $resultado = mysqli_query($conexion, $sql);  //Comprobamos la conexion a la db y la ejecución correcta del query
     mysqli_close($conexion);
 ?>
 
