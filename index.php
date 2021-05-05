@@ -31,7 +31,7 @@ Author: David Demetrio López Paz
             <div class="formulario_grupo">
                 <input type="text" class="formulario_input" id="nombre_empleado" name="nombre_empleado"
                     placeholder="Nombre(s)">
-                <p class="formulario_input_error">El nombre solo puede llevar letras y espacios.</p> <!--mensaje que se muestra cuando se introduce caracteres especiales o cualquier otra cosa diferencte a letras y espacios-->
+                <p class="formulario_input_error">El nombre solo puede llevar letras y espacios.</p> 
             </div>
 
             <!--Grupo:Edad-->
