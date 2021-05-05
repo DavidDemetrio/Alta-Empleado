@@ -1,6 +1,6 @@
 <?php
     /**Declaración de variables las cuales se les asigna el valor correspondiente a su campo
-        y que fueron enviadas desde el formulario Modificar Empleado mediante método POST*//
+        y que fueron enviadas desde el formulario Modificar Empleado mediante método POST*/
     $nombre = $_POST['nombre_empleado'];  
     $edad = $_POST['empleado_edad'];  
     $id = $_POST['empleado_id'];
@@ -16,7 +16,7 @@
         else if ($edad < 18 || $edad > 65) //si edad no esta en el rango de 18-65 años, imprime el mensaje de abajo
             echo '<script type= "text/javascript"> alert("Vaya! En el campo edad no uses la tecla espacio, vuelve a intentarlo por favor."); window.location="listaempleado.php"</script>';
         else
-            updateDatos();//si los casos anteriores son falso, entonces llama a la funcion updateDatos();
+            updateDatos();//si los casos anteriores son falsos, entonces llama a la funcion updateDatos();
     }
     /**Si algún campo del formulario Modificar Empleado está vacío.
         imprime el siguiente mensaje usando etiquetas js.*/
@@ -33,7 +33,7 @@ function updateDatos(){
     $edad = $_POST['empleado_edad'];
     $id = $_POST['empleado_id'];
 
-    $sql = "UPDATE empleado SET nombre = '$nombre', edad = '$edad' WHERE id = $id"; //quiery a ejecutar
+    $sql = "UPDATE empleado SET nombre = '$nombre', edad = '$edad' WHERE id = $id"; //query a ejecutar
     $exito = mysqli_query($conexion,$sql);
 
     if($exito)  //si la conexión a la db fue exitosa, redirecciona a la lista de empleados
@@ -41,7 +41,7 @@ function updateDatos(){
     else        //si no fue exitosa la conexión imprime el siguiente mensaje y redirecciona a  la página principal:Alta Empleado
         echo '<script type="text/javascript">alert("Falló la conexión con el servidor al intentar actualizar los datos. Inténtalo en otro momento, por favor."); window.location= "index.php"</script>';
     
-    mysqli_free_result($exito);  //libera memoria del query $sql ejecuta
+    mysqli_free_result($exito);  //libera memoria del query $sql ejecutado
     mysqli_close($conexion);    //cierra la conexión a la db
 
 }  
