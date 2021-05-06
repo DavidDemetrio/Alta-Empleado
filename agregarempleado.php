@@ -25,7 +25,7 @@ function insertDatos()
     $edad = $_POST['empleado_edad'];
 
     $sql = "INSERT INTO empleado (nombre, edad) VALUES ('$nombre', '$edad')";
-    $exito = mysqli_query($conexion, $sql);   //comprueba que el query se inserte de manera correcta
+    $exito = mysqli_query($conexion, $sql);   
    
     if ($exito)
         header('location: listaempleado.php');
