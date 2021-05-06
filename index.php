@@ -32,14 +32,12 @@ Author: David Demetrio López Paz
                 <input type="text" class="formulario_input" id="nombre_empleado" name="nombre_empleado" placeholder="Nombre(s)">
                 <p class="formulario_input_error">El nombre solo puede llevar letras y espacios.</p> 
             </div>
-            <!--Fin Campo:Nombre-->
             
             <!--Campo:Edad-->
             <div class="formulario_grupo">
                 <input type="text" class="formulario_input" id="empleado_edad" name="empleado_edad" placeholder="edad">
                 <p class="formulario_input_error2">Edad debe ser de 18-65 años.</p>
             </div>
-            <!--Fin Campo:Edad-->
             
             <!--Botón de enviar-->
             <input type="submit" name="alta_empleado" value="Enviar">
