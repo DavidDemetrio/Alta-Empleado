@@ -21,7 +21,7 @@
         echo '<script type="text/javascript">alert(":( Error! No se pude hacer la insersión de los datos en la base de datos. Por favor llena el formulario de manera correcta."); window.location = "listaempleado.php"</script>';
     }
 
-/**FUNCION updateDatos */
+/**FUNCION updateDatos prueba */
 function updateDatos(){
     include "basededatos.php";
 
