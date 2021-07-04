@@ -1,6 +1,6 @@
 <?php
 
-    $nombre = $_POST['nombre_empleado'];  
+    $nombre = $_POST['nombre_empleado'];  /////
     $edad = $_POST['empleado_edad'];  
     $id = $_POST['empleado_id'];
 
