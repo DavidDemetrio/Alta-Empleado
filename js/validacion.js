@@ -26,7 +26,7 @@ const validarFormulario = (e)=> {
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/**Funcion validarCampo */
+/**Funcion validarCampo prueba */
 const validarCampo = (expresion, input, campo) =>{
     if(expresion.test(input.value) ){  //si el input nombre_empleado corresponde a la expresion regular...
         document.getElementById(`${campo}`).classList.remove("formulario_input-error");  //... no muestras
